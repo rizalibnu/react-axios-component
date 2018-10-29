@@ -1,4 +1,4 @@
-dist
+lib
 .vscode
 coverage
 node_modules
