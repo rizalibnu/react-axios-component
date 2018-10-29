@@ -5,7 +5,7 @@ import type { RequestProviderProps } from './type';
 
 export const RequestContext = React.createContext(null);
 
-export class RequestProvider extends React.PureComponent<RequestProviderProps> {
+export class RequestProvider extends React.Component<RequestProviderProps> {
   render() {
     return (
       <RequestContext.Provider

@@ -4,7 +4,7 @@ import axios from "axios";
 import { RequestContext } from "./RequestContext";
 import type { RequestProps, RequestParams, RequestState } from "./type";
 
-export default class Request extends React.PureComponent<RequestProps, RequestState> {
+export default class Request extends React.Component<RequestProps, RequestState> {
   static defaultProps = {
     headers: {},
     config: {},

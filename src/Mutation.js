@@ -4,7 +4,7 @@ import axios from "axios";
 import { RequestContext } from "./RequestContext";
 import type { MutationProps, RequestState } from "./type";
 
-export default class Mutation extends React.PureComponent<MutationProps, RequestState> {
+export default class Mutation extends React.Component<MutationProps, RequestState> {
   static defaultProps = {
     data: {},
     headers: {},
