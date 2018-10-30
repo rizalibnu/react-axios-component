@@ -6,6 +6,9 @@ import type { RequestProviderProps } from './type';
 export const RequestContext = React.createContext(null);
 
 export class RequestProvider extends React.Component<RequestProviderProps> {
+  static defaultProps = {
+    instance: null
+  }
   render() {
     return (
       <RequestContext.Provider

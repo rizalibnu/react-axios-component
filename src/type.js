@@ -9,33 +9,33 @@ export type RequestState = {
 
 export type RequestProps = {
   url: string,
-  headers: ?Object,
-  config: ?Object,
-  params: ?Object,
-  instance: ?Object,
-  children: ?Function,
+  headers?: ?Object,
+  config?: ?Object,
+  params?: ?Object,
+  instance?: ?Object,
+  children?: ?Function,
 };
 
 export type RequestParams = {
   url: string,
-  headers: ?Object,
-  config: ?Object,
-  params: ?Object,
+  headers?: ?Object,
+  config?: ?Object,
+  params?: ?Object,
   updateResponse?: ?Function,
 };
 
 export type MutationProps = {
   url: string,
-  data: ?Object,
-  headers: ?Object,
-  config: ?Object,
-  params: ?Object,
+  data?: ?Object,
+  headers?: ?Object,
+  config?: ?Object,
+  params?: ?Object,
   method: Object,
-  instance: ?Object,
-  children: ?Function,
+  instance?: ?Object,
+  children: Function,
 };
 
 export type RequestProviderProps = {
-  instance: ?Object,
+  instance?: ?Object,
   children: React.Node,
 };
