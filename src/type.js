@@ -1,10 +1,11 @@
-//@flow
-import * as React from "react";
+// @flow
+import * as React from 'react';
 
 export type RequestState = {
   response: ?Object,
   loading: boolean,
   error: ?Object,
+  propsString?: ?string,
 };
 
 export type RequestProps = {
@@ -14,6 +15,9 @@ export type RequestProps = {
   params?: ?Object,
   instance?: ?Object,
   children?: ?Function,
+  onCompleted?: ?Function,
+  onLoading?: ?Function,
+  onError?: ?Function,
 };
 
 export type RequestParams = {
@@ -33,6 +37,18 @@ export type MutationProps = {
   method: Object,
   instance?: ?Object,
   children: Function,
+  onCompleted?: ?Function,
+  onLoading?: ?Function,
+  onError?: ?Function,
+};
+
+export type MutationParams = {
+  url: string,
+  data?: ?Object,
+  headers?: ?Object,
+  config?: ?Object,
+  params?: ?Object,
+  method: Object,
 };
 
 export type RequestProviderProps = {
