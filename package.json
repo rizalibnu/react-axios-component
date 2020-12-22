@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/rizalibnu/react-axios-component#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
